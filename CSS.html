@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS - Cascading Style Sheets</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    h1 {
+      color: red;
+      font-size: 2.5em;
+      text-align: center;
+    }
+    p {
+      color: black;
+    }
+    a {
+      color: blue;
+      text-decoration: underline;
+    }
+    .code {
+      background-color: #f8f8f8;
+      border: 1px solid #ccc;
+      font-family: monospace;
+      padding: 10px;
+    }
+    .quote {
+      background-color: #f1f1f1;
+      border-left: 5px solid #ccc;
+      margin: 0 0 20px;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Historia</h1>
+  <p>Entre finales de 1994 y 1995 Lie y Bos se unieron para definir un nuevo lenguaje que tomaba lo mejor de cada propuesta y lo llamaron CSS (Cascading Style Sheets). En 1995, el W3C decidió apostar por el desarrollo y estandarización de CSS y lo añadió a su grupo de trabajo de HTML.</p>
+
+  <h2>CSS - Cascading Style Sheets</h2>
+  <p>Las hojas de estilo en cascada (CSS, cascading style sheets) permiten crear páginas web atractivas. En el módulo Introducción al HTML, exponemos qué es el HTML y cómo se usa para definir documentos destinados a leerse en un navegador web. Los títulos se verán más grandes que el texto y los párrafos empezarán en una línea nueva y habrá un espacio entre ellos. Los enlaces aparecerán en un color diferente y subrayados para distinguirlos del resto del texto. Vienen predeterminados por el navegador y, en la práctica, son estilos muy básicos que el navegador aplica al HTML para asegurarse, básicamente, de que sean legibles incluso si el autor de la página no especifica un estilo explícito.</p>
+  <p>Como hemos mencionado, el CSS es un lenguaje informático que especifica cómo se presentan los documentos a los usuarios: cómo se diseñan, compaginan, etc. El CSS se puede usar para estilos de texto muy básicos como, por ejemplo, cambiar el color y el tamaño de los encabezados y los enlaces. Se puede utilizar para crear un diseño, como podría ser convertir una columna de texto en una composición con un área de contenido principal y una barra lateral para información relacionada. Incluso se puede usar para crear efectos de animación.</p>
+
+  <h2>Sintaxis del CSS</h2>
+  <p>El CSS es un lenguaje basado en reglas: cada usuario define las reglas que especifican los grupos de estilos que van a aplicarse a elementos particulares o grupos de elementos de la página web. Por ejemplo: «Quiero que el encabezado principal de mi página se muestre en letras grandes de color rojo».</p>
+  <div class="code">
+      h1 {
+        color: red;
+        font-size: 5em;
+      }
+    </div>
+    <p>La regla se abre con un selector. Este selecciona el elemento HTML que vamos a diseñar. En este caso, diseñaremos encabezados de nivel uno (&lt;h1&gt;). Luego tenemos un conjunto de llaves { }. Entre estas habrá una o más declaraciones, que tomarán la forma de pares de propiedad y valor. Cada par especifica cada una de las propiedades de los elementos seleccionados y el valor que queremos dar a esa propiedad.
+Antes de los dos puntos, tenemos la propiedad; y después, el valor. Las propiedades (en-US) CSS admiten diferentes valores, dependiendo de qué propiedad se esté especificando. En el ejemplo anterior, tenemos la propiedad color, que puede tomar varios valores de color. También tenemos la propiedad de font-size, que puede tomar varias unidades de tamaño como valor.</p>
+<div class="code">
+h1 {
+    color: red;
+    font-size: 5em;
+}
+
+
+p {
+    color: black;
+}
+</div>
+<h2>Modulo CSS</h2>
+<p>Como hay tantas cosas que se podrían diseñar usando CSS, el lenguaje se divide en módulos. Verás referencias a estos módulos a medida que explores en MDN y observarás que muchas de las páginas de documentación están organizadas en torno a un módulo en particular. Por ejemplo, puedes echar un vistazo a la referencia MDN del módulo Fondos y bordes para averiguar cuál es su propósito, qué otras propiedades y características diferentes contiene. También encontrarás enlaces a la especificación CSS que define la tecnología.</p>
+<h3>Especificaciones CSS</h3>
+<p>Todas las tecnologías de estándares web (HTML, CSS, JavaScript, etc.) se definen en extensos documentos denominados especificaciones, publicados por organizaciones de estándares (como W3C (en-US), WHATWG, ECMA (en-US) o Khronos (en-US)) que definen con precisión cómo se supone que deben comportarse esas tecnologías.
+<br>
+El caso de CSS no es diferente: lo desarrolla un grupo del W3C llamado CSS Working Group. Este grupo está compuesto por representantes de proveedores de navegadores y otras compañías interesadas en CSS. También hay otras personas, conocidas como expertos invitados, que actúan como voces independientes y no están vinculados a ninguna organización.
+<br>
+El CSS Working Group desarrolla o especifica características nuevas del CSS. Algunas veces lo hacen porque un navegador en particular está interesado en alguna capacidad, otras porque los diseñadores y desarrolladores web piden una característica, y otras porque el grupo ha identificado un requisito. El CSS está en desarrollo constante y todos los días presenta nuevas características disponibles. Sin embargo, un elemento clave sobre el CSS es que toda la comunidad se esfuerza mucho en no cambiar nunca nada que pueda perjudicar los sitios web antiguos. ¡Un sitio web creado en el año 2000, que utiliza el poco CSS disponible que había en ese momento, aún debería poder utilizarse hoy en día!</p>
+</body>
+</html>
+
